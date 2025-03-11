@@ -105,4 +105,37 @@ input:focus {
 
 .material-icons {
     font-size: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.footer-link:hover {
+    background-color: #f5f5f5;
+}
+
+.footer-link .material-icons {
+    font-size: 16px;
 } 
