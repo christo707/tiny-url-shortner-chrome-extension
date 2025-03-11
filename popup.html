@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TinyURL Shortener</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="material-icons">link</i> TinyURL Shortener</h1>
+        
+        <div id="api-key-section" class="section">
+            <div class="input-field">
+                <input type="password" id="api-key" placeholder="Enter your TinyURL API Key">
+                <button id="save-api-key" class="button">Save API Key</button>
+            </div>
+        </div>
+
+        <div id="url-section" class="section">
+            <div class="input-field">
+                <input type="url" id="url-input" placeholder="Enter URL to shorten">
+                <button id="shorten-btn" class="button primary">Shorten URL</button>
+            </div>
+        </div>
+
+        <div id="result-section" class="section hidden">
+            <div class="result-container">
+                <input type="text" id="shortened-url" readonly>
+                <button id="copy-btn" class="button secondary">
+                    <i class="material-icons">content_copy</i>
+                </button>
+            </div>
+        </div>
+
+        <div id="error-message" class="error hidden"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
